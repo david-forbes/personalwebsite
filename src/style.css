@@ -1,0 +1,329 @@
+:root {
+  --img-height:max(40vw,600px);
+  --main-color:rgb(0, 0, 0);
+  --highlight:rgb(255, 255, 255);
+  --if-black:100%;
+  --if-white:00%;
+}
+
+.form{
+  
+  display:flex;
+  align-items: center;
+  
+  
+    position:absolute;
+    height: 0;
+    left:0;
+    right:0;
+  top:100px;
+    width:100%;
+    
+    bottom:0;
+    
+
+  
+   
+    
+}
+.topnav{
+    position:absolute;
+    background-color: var(--main-color);
+   
+    height:100px;
+    width:100%;
+    top:0;
+    left:0;
+    color:var(--highlight);
+    
+    display:flex;
+    align-items: center;
+    
+}
+.topnav a{
+
+    padding:15px;
+    text-decoration: none;
+    font-size:30px;
+    color:var(--highlight)
+    
+    
+    
+}
+p{visibility: inherit;}
+div.para{
+  position: absolute;
+  top:calc(--img-height);
+  color: var(--main-color);
+  background-color: var(--main-color);
+  padding:30px;
+  left:0;
+  right:0;
+  visibility: hidden;
+  ;
+}
+.message{
+  width:100%;
+  opacity: 1;
+  left:0;
+  height: 140px;
+  align-items:center;
+  background-color: var(--main-color);
+  color:var(--highlight);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position:absolute;
+  top:calc(var(--img-height)/2);
+  bottom: calc(var(--img-height)/2);
+  margin-top: -70px;
+  margin-bottom: -70px;
+  
+}
+
+
+
+.img2{
+  position: absolute;
+  left:0;
+  right:0;
+  top:0;
+  width: 100%;
+  height: var(--img-height);
+  filter:invert(var(--if-white))
+ 
+ 
+}
+.img1{
+  filter: invert(calc(var(--if-black))) ;
+  
+  height: 50px;
+  width:50px;
+  transition-duration: infinite;
+  transition-property: animation;
+
+
+    
+}
+.img1:hover{
+  animation:rotation 2s infinite linear;
+
+
+
+}
+.text{
+  position: absolute;
+  top:5px
+}
+@keyframes rotation{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(359deg);}
+}
+body{
+  overflow:auto;
+  letter-spacing: -0.1em;
+  font-family: Arial;
+  margin:0;
+  
+  opacity:1
+}
+.prg{
+  position:absolute;
+  bottom: 5px;
+  visibility: visible;
+  
+
+  
+
+}
+.message:hover>.prg{
+  transition-property: opacity;
+  transition-duration: .5s;
+  opacity: 0;
+  cursor:text;
+  
+  
+  
+}
+
+
+.hcj{
+  position:absolute;
+  bottom: 5px;
+
+  opacity: 0;
+
+}
+.message:hover>.hcj{
+  animation: fade 2s linear;
+  animation-delay: 2s;
+}
+.pyt{
+  position:absolute;
+  bottom: 5px;
+  opacity: 0;
+}
+.message:hover>.pyt{
+
+  animation: fade 2s linear;
+  animation-delay: 4s;
+}
+.message:hover>.ccc{
+  animation: fade 2s linear;
+  animation-delay: 6s;
+}
+.ccc{
+  position:absolute;
+  bottom: 5px;
+  opacity: 0;
+  
+}
+
+.jav{
+  position:absolute;
+  bottom: 5px;
+  opacity: 0;
+  margin-top: calc(140px-67.833px);
+
+
+  
+}
+.prg2{
+  position:absolute;
+  bottom: 5px;
+  opacity: 0;}
+  .message:hover>.prg2{
+    animation: fade2 2s linear;
+    animation-delay: 8s;
+    transition-delay: 10s;
+    transition-property: opacity;
+    transition-duration: infinite;
+    transition-timing-function: step-start;
+    opacity: 1;
+  }
+  @keyframes fade2 {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+    }
+
+.message:hover>.jav{
+  opacity: 0;
+  animation: fade 2s linear;
+}
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+  }
+
+
+
+.boxo{
+  min-height: 100px;
+min-width: 100px;
+width:200px;
+height: 200px;
+background-color: var(--main-color);
+border-radius: 0;
+border:solid 5px var(--highlight) ;
+border-style: solid;
+border-color: var(--highlight);
+z-index: 2;
+display:flex;
+
+justify-content: center;
+color:var(--highlight)
+
+
+
+}
+.boxo:hover{
+  transition:background-color 0.25s ease-out ;
+  border-color: #2196F3;
+
+  
+}
+
+
+
+.cont{
+  position: absolute;
+  left:0;
+  right:0;
+  top:var(--img-height);}
+
+
+
+.flex{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  gap:30px;
+  
+  display: flex;
+  padding:30px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+}
+#ha{
+  padding-top:10px;
+  top:260px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: auto;
+  margin-right: 30px;
+  
+  
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
