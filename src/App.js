@@ -127,18 +127,18 @@ class App extends Component {
   </div>
   <div className ="boxo">
 
-  <p className='howd'>4CHAN PAPER SCRAPER</p>
+  <p className='howd'> PAPER SCRAPER</p>
   
 
   </div>
   <div className ="boxo">
 
   <h2
-  className='howd'>4chan </h2>
+  className='howd'>weather </h2>
   </div>
   <div className ="boxo">
 
-  <h2 className='howd' >4chan scraper</h2>
+  <h2 className='howd' >scraper</h2>
   </div>
 
   
