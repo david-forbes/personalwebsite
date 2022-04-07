@@ -17,21 +17,14 @@ class App extends Component {
     const cookies=new Cookies();
     const container = document.getElementById('root');
     let root =container;
-    let myCookie = cookies.get("dark");
-    
-    console.log(myCookie);
-    if(myCookie=false){
-      this.setState({isChecked:true}, {secure: true, sameSite: 'none'});
-    }
-    
-    
-    
     this.handleChange=this.handleChange.bind(this);
-      
+    this.state={
+      isChecked:"false"
+    }
     
   }
   lightMode(cookies, root){
-    cookies.set({"dark":true},{ secure: true, sameSite: 'none'});
+    
     console.log(cookies.get("dark"));
    
       root.style.setProperty("--main-color","white");
@@ -40,7 +33,7 @@ class App extends Component {
       root.style.setProperty("--if-white","100%");
   }
   darkMode(cookies,root){
-    cookies.set({"dark":false},{secure: true, sameSite: 'none'});
+    
       console.log(cookies.get("dark"));
       root.style.setProperty("--main-color","black");
       root.style.setProperty("--highlight","white");
