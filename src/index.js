@@ -4,6 +4,7 @@ import { createRoot } from 'react-dom/client';
 import RouteSwitch from "./RouteSwitch";
 import App from './App';
 import styles from './style.css'; 
+import { isContentEditable } from '@testing-library/user-event/dist/utils';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
@@ -83,9 +84,13 @@ class Index extends Component {
       );
     }
   }
+  
+    document.title=  "davidforbes.dev"
+    
 
 
 root.render(
+  
   
   <div>
     {/*
@@ -112,6 +117,7 @@ root.render(
   <React.StrictMode>
     <RouteSwitch />
   </React.StrictMode>
+  
   </div>
 );
 

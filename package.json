@@ -1,5 +1,5 @@
 {
-  "homepage": "https://davidforbes.dev",
+  "homepage": "https://www.davidforbes.dev",
   "name": "task-app",
   "version": "0.1.0",
   "private": true,
@@ -17,9 +17,9 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build ",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && touch build/CNAME && echo 'www.davidforbes.dev' > build/CNAME",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
