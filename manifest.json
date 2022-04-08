@@ -1,9 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "website",
+  "name": "personalwebsite",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "https://cdn4.iconfinder.com/data/icons/software-line/32/software-line-02-512.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
