@@ -13,7 +13,7 @@ import Cookies from 'universal-cookie';
 class App extends Component {
   constructor(props) {
     super(props);
-  
+  /*
     const cookies=new Cookies();
     const container = document.getElementById('root');
     let root =container;
@@ -25,7 +25,7 @@ class App extends Component {
   }
   lightMode(cookies, root){
     
-    console.log(cookies.get("dark"));
+    
    
       root.style.setProperty("--main-color","white");
       root.style.setProperty("--highlight","black");
@@ -34,7 +34,7 @@ class App extends Component {
   }
   darkMode(cookies,root){
     
-      console.log(cookies.get("dark"));
+      
       root.style.setProperty("--main-color","black");
       root.style.setProperty("--highlight","white");
       root.style.setProperty("--if-black","100%");
@@ -58,10 +58,10 @@ class App extends Component {
       this.darkMode(cookies, root)
       
     }
-    
+*/    
 
   }
-
+  
 
   render() {
     
@@ -70,7 +70,10 @@ class App extends Component {
 
     return (
 
-      <div>
+      
+
+
+        /*
         <header className = "topnav">
         <a href="#"><img className = "img1" src="https://cdn4.iconfinder.com/data/icons/software-line/32/software-line-02-512.png"></img></a>
         <a href="#">ABOUT</a>
@@ -86,8 +89,8 @@ class App extends Component {
   
   <span className="slider"></span>
 </label>
-          </header>
-        
+          </header>*/
+
 <main className="form">
    
 <div className="imageal"><img className = "img2"  src="https://expertphotography.b-cdn.net/wp-content/uploads/2017/07/stribes_gone_wild.jpg"></img>
@@ -156,9 +159,10 @@ class App extends Component {
 </div>
 </div>
       
-</main></div>
+</main>
+
     );
-    }
+  }
 
 }
 
