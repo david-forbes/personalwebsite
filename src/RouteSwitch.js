@@ -8,8 +8,8 @@ const RouteSwitch = () => {
     <HashRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/about" element={<About />}/>
+        <Route path="/#/profile" element={<Profile />} />
+        <Route path="/#/about" element={<About />}/>
       </Routes>
     </HashRouter>
   );
