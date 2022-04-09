@@ -4,6 +4,7 @@ import { createRoot } from 'react-dom/client';
 import Cookies from 'universal-cookie';
 import RouteSwitch from "./RouteSwitch";
 import App from './App';
+import About from './About';
 import styles from './style.css'; 
 import { isContentEditable } from '@testing-library/user-event/dist/utils';
 
