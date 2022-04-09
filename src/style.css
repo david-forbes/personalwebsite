@@ -16,7 +16,7 @@
     height: 0;
     left:0;
     right:0;
-  top:100px;
+  top:101px;
     width:100%;
     
     bottom:0;
@@ -33,7 +33,7 @@
   flex-direction: column;
   align-items: center;
   position:absolute;
-  top:100px;
+  top:101px;
   left:0px;
   right:0px;
   bottom:0px;
@@ -53,6 +53,7 @@
     
     display:flex;
     align-items: center;
+    border-bottom: 1px solid black;
     
     
 }
@@ -107,10 +108,12 @@ div.para{
   top:0;
   width: 100%;
   height: var(--img-height);
-  filter:invert(var(--if-white))
- 
+  filter:invert(var(--if-white));
+  
+  
  
 }
+
 .img1{
   filter: invert(calc(var(--if-black))) ;
   
@@ -118,6 +121,7 @@ div.para{
   width:50px;
   transition-duration: infinite;
   transition-property: animation;
+  
 
 
     
@@ -263,10 +267,12 @@ color:var(--highlight)
 
 
 .cont{
+  border-top:1px solid black;
   position: absolute;
   left:0;
   right:0;
-  top:var(--img-height);}
+  
+  top:calc(var(--img-height));}
 
 
 
