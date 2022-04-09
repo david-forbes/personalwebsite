@@ -1,6 +1,7 @@
 import React, { Component }  from 'react';
 import ReactDOM from 'react-dom';
 import { createRoot } from 'react-dom/client';
+import Cookies from 'universal-cookie';
 import RouteSwitch from "./RouteSwitch";
 import App from './App';
 import styles from './style.css'; 
@@ -16,9 +17,23 @@ class Index extends Component {
     const container = document.getElementById('root');
     let root =container;
     this.handleChange=this.handleChange.bind(this);
+    const cookies = new Cookies();
+    console.log(cookies.get("lightMode"));
+    if (cookies.get("lightMode")=="true"){
+      this.state={
+        isChecked:true
+      }
+      const container = document.getElementById('root');
+    let root =container;
+    this.lightMode(root);
+    console.log("worked");
+    }else{
+      
     this.state={
-      isChecked:"false"
-    }
+      isChecked:false
+
+    }}
+    
     
   }
   lightMode(root){
@@ -46,14 +61,17 @@ class Index extends Component {
     
     const container = document.getElementById('root');
     let root =container;
-    
-    if(this.state.isChecked){
+    console.log(this.state.isChecked)
+    const cookies = new Cookies();
+    if(!this.state.isChecked){
       this.lightMode(root)
       
+      cookies.set('lightMode', true, {secure: true, sameSite: 'none'});
       
   }
     else{
       this.darkMode(root)
+      cookies.set('lightMode', false, {secure: true, sameSite: 'none'});
       
     }
     
@@ -64,15 +82,15 @@ class Index extends Component {
     render(){
       return(
 <header className = "topnav">
-        <a href="#"><img className = "img1" src="https://cdn4.iconfinder.com/data/icons/software-line/32/software-line-02-512.png"></img></a>
-        <a href="#">ABOUT</a>
+        <a href="/"><img className = "img1" src="https://cdn4.iconfinder.com/data/icons/software-line/32/software-line-02-512.png"></img></a>
+        <a href="/about">ABOUT</a>
   <a href="/profile">SERVICES</a>
   <a href="#">CLIENTS</a>
-  <a href="#">CONTACT</a>
+  <a href="https://www.github.com/david-forbes">GITHUB</a>
   <label className="switch" id="sw">
-  <input type="checkbox" 
+  <input type="checkbox" id="checkbox" className='checkbox'
   
-  checked={this.isChecked}
+  checked={this.state.isChecked}
   onChange={this.handleChange} 
   
   >
@@ -93,26 +111,7 @@ root.render(
   
   
   <div>
-    {/*
-        <header className = "topnav">
-        <a href="#"><img className = "img1" src="https://cdn4.iconfinder.com/data/icons/software-line/32/software-line-02-512.png"></img></a>
-        <a href="#">ABOUT</a>
-  <a href="/profile">SERVICES</a>
-  <a href="#">CLIENTS</a>
-  <a href="#">CONTACT</a>
-  <label className="switch" id="sw">
-  <input type="checkbox" 
-  
-  checked={Index.isChecked}
-  onChange={Index.handleChange} 
-  
-  >
-  </input>
-  
-  <span className="slider"></span>
-</label>
-          </header>
-*/    }
+    
   <Index/>
   <React.StrictMode>
     <RouteSwitch />

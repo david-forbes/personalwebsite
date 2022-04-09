@@ -26,6 +26,21 @@
    
     
 }
+.aboutPage{
+  font-family: 'Courier New', Courier, monospace;
+  padding:50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position:absolute;
+  top:100px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  color:var(--highlight);
+  background-color: var(--main-color);
+  opacity: 0.98;
+}
 .topnav{
     position:absolute;
     background-color: var(--main-color);
@@ -38,6 +53,7 @@
     
     display:flex;
     align-items: center;
+    
     
 }
 .topnav a{
@@ -239,7 +255,7 @@ color:var(--highlight)
 }
 .boxo:hover{
   transition:background-color 0.25s ease-out ;
-  border-color: #2196F3;
+  border-color: #6f777e;
 
   
 }
