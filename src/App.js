@@ -93,7 +93,7 @@ class App extends Component {
 
 <main className="form">
    
-<div className="imageal"><img className = "img2"  href="https://expertphotography.b-cdn.net/wp-content/uploads/2017/07/stribes_gone_wild.jpg"></img>
+<div className="imageal"><img className = "img2"  src="https://expertphotography.b-cdn.net/wp-content/uploads/2017/07/stribes_gone_wild.jpg"alt = "%PUBLIC_URL%/bg.webp"></img>
 <div className="message">
 <h1 className="text">DAVID FORBES</h1>
 <div className="prg">
