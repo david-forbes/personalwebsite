@@ -26,9 +26,10 @@
    
     
 }
-.aboutPage{
+.content{
   font-family: 'Courier New', Courier, monospace;
-  padding:50px;
+  padding:0;
+  margin: 10;
   display: flex;
   flex-direction: column;
   align-items: center;

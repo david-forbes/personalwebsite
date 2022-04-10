@@ -1,8 +1,14 @@
 const Profile = () => {
     return (
-      <div>
-        <a href="/">Hello from Profile</a>
-      </div>
+      <div className='content'>
+
+                <h1>
+                    Projects
+                </h1>
+                <p>
+               Here are a selection of my projects
+                </p>
+            </div>
     );
   };
   

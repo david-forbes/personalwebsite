@@ -13,7 +13,7 @@ class About extends Component{
 
     render(){
         return(
-            <div className='aboutPage'>
+            <div className='content aboutPage'>
 
                 <h1>
                     About Me

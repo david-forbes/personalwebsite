@@ -83,10 +83,10 @@ class Index extends Component {
     render(){
       return(
 <header className = "topnav">
-        <a href="/"><img className = "img1" src="https://cdn4.iconfinder.com/data/icons/software-line/32/software-line-02-512.png"></img></a>
+        <a href="/"><img className = "img1" src="https://cdn4.iconfinder.com/data/icons/software-line/32/software-line-02-512.png" alt ="%PUBLIC_URL%/logo192.png"></img></a>
         <a href="/#/about">ABOUT</a>
-  <a href="/#/profile">SERVICES</a>
-  <a href="#">CLIENTS</a>
+  <a href="/#/profile">PROJECTS</a>
+  {/*<a href="#">CLIENTS</a>*/}
   <a href="https://www.github.com/david-forbes">GITHUB</a>
   <label className="switch" id="sw">
   <input type="checkbox" id="checkbox" className='checkbox'
