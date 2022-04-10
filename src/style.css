@@ -60,7 +60,7 @@
 }
 .topnav a{
 
-    padding:10px;
+    padding:2vw;
     text-decoration: none;
     font-size:min(4vw,30px);
     color:var(--highlight)
@@ -96,7 +96,7 @@ div.para{
   top:calc(var(--img-height)/2);
   bottom: calc(var(--img-height)/2);
   margin-top: -70px;
-  
+
   margin-bottom: -70px;
   
 }
