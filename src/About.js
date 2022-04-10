@@ -20,9 +20,8 @@ class About extends Component{
                 </h1>
                 <p>
                 Hi, my name is David Forbes. I am currently studying mathematics in UCD, as well as learning 
-                programming in my own time. Right now I am focusing on web development, but I also have experience in 
-                java making android apps, using python for web scraping, scientific computing and general scripting, 
-                as well as a little C experience. You can contact me at davidforbescontact@gmail.com.
+                programming. I have experience with both front and back end web development, creating android apps with java, 
+                as well as with both python and c. You can get in touch with me at davidforbescontact@gmail.com.
 
                 </p>
             </div>
