@@ -60,9 +60,9 @@
 }
 .topnav a{
 
-    padding:15px;
+    padding:10px;
     text-decoration: none;
-    font-size:30px;
+    font-size:min(4vw,30px);
     color:var(--highlight)
     
     
@@ -120,6 +120,7 @@ div.para{
   
   height: 50px;
   width:50px;
+  
   transition-duration: infinite;
   transition-property: animation;
   
