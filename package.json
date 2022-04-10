@@ -19,7 +19,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build ",
     "start": "react-scripts start",
-    "acpd":"git add . && git commit -m '$1' && git push --all && npm run deploy",
+    "acpd":"git add . && git commit -m '{$1}' && git push --all && npm run deploy",
     "build": "react-scripts build && touch build/CNAME && echo 'www.davidforbes.dev' > build/CNAME",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

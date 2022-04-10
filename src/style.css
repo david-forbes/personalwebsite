@@ -9,7 +9,7 @@
 .form{
   
   display:flex;
-  align-items: center;
+  align-content: center;
   
   
     position:absolute;
@@ -242,10 +242,11 @@ body{
 
 
 .boxo{
-  min-height: 100px;
-min-width: 100px;
-width:200px;
-height: 200px;
+  height: min(200px,20vw);
+  width: min(200px,20vw);
+  break-inside: avoid-column; /* Prevent element from breaking */
+  page-break-inside: avoid; 
+
 background-color: var(--main-color);
 border-radius: 0;
 border:solid 5px var(--highlight) ;
@@ -284,12 +285,19 @@ color:var(--highlight)
   top:0;
   left:0;
   right:0;
-  gap:30px;
-  
-  display: flex;
   padding:30px;
-  justify-content: center;
+  grid-gap:30px;
+  display: grid;
   align-items: center;
+  grid-template-columns: repeat(auto-fill,   min(250px,20vw));
+  /*grid-auto-flow: column;
+  */
+  justify-content: center;
+  
+  
+  
+  
+  
   background-color: var(--main-color);
 }
 #ha{

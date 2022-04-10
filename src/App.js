@@ -119,29 +119,23 @@ class App extends Component {
 <div className = "flex">
   <div className ="boxo">
 
-      <p className='howd'>WEATHER SCRAPER EMAIL LIST</p>
+      <p className='howd'>ENCRYPTED SMS APP</p>
   </div>
   <div className ="boxo">
 
-  <p className='howd'> PAPER SCRAPER</p>
+  <p className='howd'> ACADEMIC PAPER SCRAPER</p>
   
 
   </div>
-  <div className ="boxo">
-
-  <h2
-  className='howd'>weather </h2>
-  </div>
-  <div className ="boxo">
-
-  <h2 className='howd' >scraper</h2>
-  </div>
+  
+  
 
   
 
-
+{/*
 </div>
 <div className = "flex other" id="ha">
+    */}
 <div className ="boxo">
 
 
