@@ -243,17 +243,19 @@ body{
 
 .boxo{
   height: min(200px,20vw);
-  width: min(200px,20vw);
+  width: min(400px,35vw);
   break-inside: avoid-column; /* Prevent element from breaking */
   page-break-inside: avoid; 
-
+  align-items: center;
+  
 background-color: var(--main-color);
 border-radius: 0;
-border:solid 5px var(--highlight) ;
+border:solid 3px var(--highlight) ;
 border-style: solid;
 border-color: var(--highlight);
 z-index: 2;
 display:flex;
+text-align: center;
 
 justify-content: center;
 color:var(--highlight)
@@ -267,29 +269,48 @@ color:var(--highlight)
 
   
 }
-
+.lowerContent{
+  height:100px;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  color:var(--highlight);
+  background-color: var(--main-color);
+  width:100%;
+  border-top: 1px solid black;
+}
 
 
 .cont{
   border-top:1px solid black;
+  
   position: absolute;
   left:0;
   right:0;
-  
-  top:calc(var(--img-height));}
+  display:flex;
+  flex-direction: column;
+  top:calc(var(--img-height));
+  bottom:0;
+}
 
 
 
 .flex{
+  /*
   position:absolute;
   top:0;
   left:0;
   right:0;
-  padding:30px;
+  */
+  left: 0;
+  right:0;
+  padding: 30px;
+   /*padding:30px;*/
   grid-gap:30px;
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(auto-fill,   min(250px,20vw));
+  grid-template-columns: repeat(auto-fill,   min(500px,35vw));
   /*grid-auto-flow: column;
   */
   justify-content: center;
