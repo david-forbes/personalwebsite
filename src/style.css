@@ -82,9 +82,9 @@ div.para{
 }
 .message{
   width:100%;
-  opacity: 1;
+  opacity: 0.985;
   left:0;
-  height: 140px;
+  height: 160px;
   align-items:center;
   background-color: var(--main-color);
   color:var(--highlight);
@@ -95,9 +95,9 @@ div.para{
   position:absolute;
   top:calc(var(--img-height)/2);
   bottom: calc(var(--img-height)/2);
-  margin-top: -70px;
+  margin-top: -80px;
 
-  margin-bottom: -70px;
+  margin-bottom: -80px;
   
 }
 
@@ -247,9 +247,10 @@ body{
   break-inside: avoid-column; /* Prevent element from breaking */
   page-break-inside: avoid; 
   align-items: center;
+  border-radius: 0;
   
 background-color: var(--main-color);
-border-radius: 0;
+border-radius: 20px;
 border:solid 3px var(--highlight) ;
 border-style: solid;
 border-color: var(--highlight);
@@ -306,8 +307,9 @@ color:var(--highlight)
   left: 0;
   right:0;
   padding: 30px;
+  padding-top: 60px;
    /*padding:30px;*/
-  grid-gap:30px;
+  grid-gap:min(60px,10vw);
   display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fill,   min(500px,35vw));
