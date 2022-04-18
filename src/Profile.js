@@ -6,7 +6,7 @@ const Profile = () => {
                     Projects
                 </h1>
                 <p>
-               Here are a selection of my projects
+               A selection of my projects can be found on my <a href = "https://github.com/david-forbes"><span>github page</span></a>.
                 </p>
             </div>
     );
