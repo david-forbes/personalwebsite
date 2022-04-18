@@ -58,6 +58,9 @@
     
     
 }
+.projectLink{
+  text-decoration: none;
+}
 .topnav a{
 
     padding:2vw;
@@ -68,7 +71,11 @@
     
     
 }
-p{visibility: inherit;}
+.aboutPage{
+  padding:20px;
+}
+p{visibility: inherit;
+text-decoration: none;}
 div.para{
   position: absolute;
   top:calc(--img-height);
@@ -149,7 +156,8 @@ body{
   font-family: Arial;
   margin:0;
   
-  opacity:1
+  opacity:1;
+ 
 }
 .prg{
   position:absolute;
@@ -207,7 +215,7 @@ body{
   position:absolute;
   bottom: 5px;
   opacity: 0;
-  margin-top: calc(140px-67.833px);
+  margin-top: calc(140px-70px);
 
 
   
@@ -248,9 +256,10 @@ body{
   page-break-inside: avoid; 
   align-items: center;
   border-radius: 0;
+  text-decoration:none;
   
 background-color: var(--main-color);
-border-radius: 20px;
+border-radius: 3px;
 border:solid 3px var(--highlight) ;
 border-style: solid;
 border-color: var(--highlight);
@@ -259,7 +268,8 @@ display:flex;
 text-align: center;
 
 justify-content: center;
-color:var(--highlight)
+color:var(--highlight);
+
 
 
 

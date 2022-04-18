@@ -117,17 +117,24 @@ class App extends Component {
 </div>
 <div className="cont">
 <div className = "flex">
+  <a className = "projectLink"href = "https://github.com/david-forbes/EncryptedSmsApp">
+
+  
   <div className ="boxo">
 
       <p className='howd'>ENCRYPTED SMS APP</p>
   </div>
+  </a >
+  <a href = "https://github.com/david-forbes/EncryptedSmsApp"className = "projectLink">
+
+  
   <div className ="boxo">
 
   <p className='howd'> ACADEMIC PAPER SCRAPER</p>
   
 
   </div>
-  
+  </a>
   
 
   
@@ -136,25 +143,32 @@ class App extends Component {
 </div>
 <div className = "flex other" id="ha">
     */}
+    <a className = "projectLink"href="https://github.com/david-forbes/personalwebsite">
 <div className ="boxo">
+  
 <p className='howd'> PERSONAL WEBSITE</p>
 
   </div>
+  </a>
+  <a className = "projectLink"href="https://github.com/david-forbes/">
   <div className ="boxo">
-  <p className='howd'> ACADEMIC PAPER SCRAPER</p>
+  <p className='howd'> GITHUB</p>
   </div>
-  <div className ="boxo">
+  </a>
+  {/*<div className ="boxo">
   <p className='howd'> ACADEMIC PAPER SCRAPER</p>
   </div>
   <div className ="boxo">
   <p className='howd'> ADD TEXT HERE</p>
-  </div> 
   </div>
+  */} 
+  </div>
+  {/*
   <div className = "lowerContent">
   hello
-
+  
 </div>
-
+  */}
 </div>
 
 </main>
