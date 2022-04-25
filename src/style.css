@@ -155,6 +155,7 @@ body{
   letter-spacing: -0.1em;
   font-family: Arial;
   margin:0;
+  background-color: var(--main-color);
   
   opacity:1;
  
