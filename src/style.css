@@ -54,7 +54,7 @@
     
     display:flex;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--highlight);
     
     
 }
@@ -88,8 +88,10 @@ div.para{
   ;
 }
 .message{
+  border-top: 1px solid var(--highlight);
+  border-bottom: 1px solid var(--highlight);
   width:100%;
-  opacity: 0.985;
+  opacity: 1;
   left:0;
   height: 160px;
   align-items:center;
@@ -260,8 +262,8 @@ body{
   text-decoration:none;
   
 background-color: var(--main-color);
-border-radius: 3px;
-border:solid 3px var(--highlight) ;
+border-radius: 0px;
+border:solid 1px var(--highlight) ;
 border-style: solid;
 border-color: var(--highlight);
 z-index: 2;
@@ -290,12 +292,12 @@ color:var(--highlight);
   color:var(--highlight);
   background-color: var(--main-color);
   width:100%;
-  border-top: 1px solid black;
+  border-top: 1px solid var(--highlight);
 }
 
 
 .cont{
-  border-top:1px solid black;
+  border-top:1px solid var(--highlight);
   
   position: absolute;
   left:0;
